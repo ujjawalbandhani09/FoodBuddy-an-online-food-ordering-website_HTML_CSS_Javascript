@@ -1,0 +1,487 @@
+* {
+	padding: 0;
+	margin: 0;
+    box-sizing: border-box;
+	
+}
+
+
+html {
+	font-size: 16px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	scroll-behavior: smooth;
+	/* background-color: crimson; */
+	
+} 
+
+
+body{
+	background-color: rgb(243, 199, 207);
+	opacity: 5;
+	z-index: -5;
+}
+
+a {
+	text-decoration: none;
+	
+}  
+
+
+
+
+.wrapper{
+    background-color: rgb(245, 162, 37);
+    border: 8px solid crimson;
+ 
+    padding: 10vh;
+    
+}
+
+
+
+.wrapper .form-label{
+    font-size:3vh ;
+    font-weight: bold;
+    color: black;
+}
+
+
+
+.wrapper .valid-feedback{
+    font-size: 2.3vh;
+    font-weight: bold;
+    /* color:red */
+}
+
+.wrapper .invalid-feedback{
+    font-size: 2.3vh;
+    font-weight: bold;
+    color:red;
+
+}
+
+
+.wrapper .form-control{
+    border: 3px solid black;
+}
+
+
+
+.wrapper .form-select{
+    border: 2px solid black;
+}
+
+
+
+.wrapper .form-check-input{
+    border: 2px solid black;
+    font-size:3vh;
+    font-weight: bold;
+}
+
+
+.wrapper .form-check-label{
+    font-size:3vh;
+    color: black;
+
+    font-weight: bold;
+}
+
+
+
+.wrapper .form-check-label for{
+    font-size:3vh;
+    color: black;
+
+    font-weight: bold;
+}
+
+
+.wrapper .save button{
+    font-size: 3vh;
+    border-radius: 3vh;
+    border: 2px solid black;
+
+}
+
+
+
+.wrapper .save button:hover{
+    font-size: 3vh;
+    font-weight: bold;
+    border-radius: 3vh;
+    background-color: black;
+    color: rgb(245, 162, 37);
+    border: 2px solid black;
+
+}
+
+
+.wrapper .submit button{
+    font-size: 3vh;
+    border-radius: 3vh;
+    border: 2px solid black;
+
+}
+
+
+
+.wrapper .submit button:hover{
+    font-size: 3vh;
+    font-weight: bold;
+    border-radius: 3vh;
+    background-color: black;
+    color: rgb(245, 162, 37);
+    border: 2px solid black;
+
+}
+
+
+
+
+
+.foot{
+	background-color: crimson;
+    width: 100%;
+}
+
+.foot h4{
+	color: white;
+	font-size:5vh;
+	text-align: center;
+}
+
+
+.foot .submit button{
+	border: solid white 4px;
+    background-color:crimson;
+	border-radius: 5em;
+	color: white;
+	font-size: 3.5vh;
+}
+
+
+.foot .submit button:hover{
+	border-radius: 5em;
+	background-color: white;
+	color: crimson;
+	font-size: 3.5vh;
+}
+
+
+.foot .icon-link img{
+	filter: grayscale(1);
+	transition: .3s ease filter;
+}
+
+.foot .icon-link img:hover{
+	filter: grayscale(0);
+}
+
+
+
+.foot .footer-link-item{
+	color:white;
+	font-size: 2.5vh;
+}
+
+
+.foot .footer-link-item:hover{
+	color:crimson;
+    background-color: white;
+    font-weight: bold;
+	font-size: 2.5vh;
+}
+
+.foot .container-fluid{
+	background-color:black;
+    padding-bottom: 4vh;
+
+}
+
+.foot .container-fluid .h3{
+    font-size: 4vh;
+	color:white;
+}
+
+
+.foot .container-fluid small{
+    font-size:2vh;
+	color:white;
+}
+
+
+.gotopbtn {
+    position: fixed;
+    width: 7.5vh;
+    height: 8vh;
+    padding: 0.8vh; 
+    border: yellow 4px solid;
+    background: #27ae60;
+    bottom: 6vh; 
+    right: 7vh;
+  
+    /* line-height: 50px; */
+}
+
+
+.top img{
+    color: white;
+    text-decoration: none;
+    height: 5vh;
+    
+  }
+
+
+
+
+  /* ----------------------------------------------- 
+
+  ------------------Mobile Phone--------------------
+
+ ------------------------------------------------ */
+
+
+@media only screen and (max-width:768px){
+    #header{
+        background-color: black;
+        /* border: 2px solid yellow;  */
+        width:100%;
+        /* top:0vh; */
+        /* z-index: 1000; */
+        
+    }
+    
+
+    #header .nav-list ul{
+        list-style: none;
+    }
+
+    
+    #header .nav-list{
+        font-weight: bolder;
+        /* border: 2px solid orange; */
+        list-style: none;
+        top:vh;
+        width: 100%;
+        left:0vh;
+        /* margin-right: 10vh; */
+        font-size: 3.6vh;
+        /* z-index: 100; */
+    }
+        
+    
+    #header .nav-list a{
+        color: white;
+    }
+    
+    
+    
+    
+    #header .nav-list a:hover{
+        padding-top: 0;
+        padding-bottom:0;
+        
+        color: crimson;
+        font-size: 4vh;
+        font-weight: bold;
+        background-color: white;
+        border: 2px solid crimson;
+        border-radius: 4vh;
+    
+    }
+       
+    #home{
+    	background-color: crimson;
+        margin-top: 10vh;
+    }
+
+
+    .main h3{
+        font-size: 7vh;
+        color: black;
+        font-weight: bold;
+    }
+
+
+    .main p{
+        font-size: 3vh;
+        margin-bottom: 1vh;
+        color: black;
+        opacity: 0.8;
+
+    }
+
+    
+}
+
+
+
+
+  /* ----------------------------------------------- 
+
+  ------------------Tablet--------------------
+
+ ------------------------------------------------ */
+
+@media only screen and (min-width:769px) {
+    
+ 
+#header{
+	position: fixed;
+	background-color: black;
+	width:100%;
+	height: 12%;
+	top:0vh;
+	z-index: 1000;
+	
+}
+
+
+#header .nav-list {
+
+	position: fixed;
+	font-weight: bolder;
+	/* border: 2px solid yellow; */
+    top:-5vh;
+	right:10vh;
+	margin-right: 10vh;
+	font-size: 3.8vh;
+	z-index: 100;
+}
+	
+
+#header .nav-list a{
+	color: white;
+}
+
+
+
+
+#header .nav-list a:hover{
+	padding-top: 0vh;
+	padding-bottom: 0vh;
+
+	color: crimson;
+	font-size: 4.8vh;
+	font-weight: bold;
+	background-color: white;
+	border: 2px solid crimson;
+	border-radius: 4vh;
+
+}
+
+
+
+#home{
+	background-color: crimson;
+    margin-top: 20vh;
+}
+
+
+
+.main h3{
+    font-size: 10vh;
+    color: black;
+    font-weight: bold;
+}
+
+
+.main p{
+    font-size: 4vh;
+    margin-top: 9vh;
+    margin-bottom: 1vh;
+    color: black;
+    opacity: 0.8;
+
+    /* border: 2px solid black; */
+    /* font-weight: bold; */
+}
+
+}
+
+
+
+
+  /* ----------------------------------------------- 
+
+  ------------------Laptop--------------------
+
+ ------------------------------------------------ */
+
+
+
+ @media screen and (min-width:1200px){
+
+    #header{
+        position: fixed;
+        background-color: black;
+        width:100%;
+        height: 12%;
+        top:0vh;
+        z-index: 1000;
+        
+    }
+    
+    
+    #header .nav-list {
+    
+        position: fixed;
+        font-weight: bolder;
+        /* border: 2px solid yellow; */
+        top:-5vh;
+        right:10vh;
+        margin-right: 10vh;
+        font-size: 3.8vh;
+        z-index: 100;
+    }
+        
+    
+    #header .nav-list a{
+        color: white;
+    }
+    
+    
+    
+    
+    #header .nav-list a:hover{
+        padding-top: 0vh;
+        padding-bottom: 0vh;
+    
+        color: crimson;
+        font-size: 4.8vh;
+        font-weight: bold;
+        background-color: white;
+        border: 2px solid crimson;
+        border-radius: 4vh;
+    
+    }
+    
+    
+    
+    #home{
+        background-color: crimson;
+        margin-top: 20vh;
+    }
+    
+    
+    
+    .main h3{
+        font-size: 10vh;
+        color: black;
+        font-weight: bold;
+    }
+    
+    
+    .main p{
+        font-size: 4vh;
+        margin-top: 9vh;
+        margin-bottom: 1vh;
+        color: black;
+        opacity: 0.8;
+    
+        /* border: 2px solid black; */
+        /* font-weight: bold; */
+    }
+    
+    }

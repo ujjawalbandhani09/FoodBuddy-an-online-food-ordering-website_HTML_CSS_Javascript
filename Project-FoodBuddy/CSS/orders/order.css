@@ -1,0 +1,432 @@
+
+* {
+	padding: 0;
+	margin: 0;
+    box-sizing: border-box;
+	
+}
+
+
+html {
+	font-size: 16px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	scroll-behavior: smooth;
+	/* background-color: crimson; */
+	
+} 
+
+
+body{
+	background-color: rgb(243, 199, 207);
+	opacity: 5;
+	z-index: -5;
+}
+
+a {
+	text-decoration: none;
+	
+}  
+
+
+#header{
+	/* position: realtive; */
+	background-color: black;
+	/* border: 6px solid yellow; */
+	/* width:100%; */
+	/* height: 100%; */
+	/* top:7.59vh; */
+	/* z-index: 1000; */
+	
+}
+
+
+#header .nav-list {
+
+	/* position: absolute; */
+	font-weight: bolder;
+	/* border: 2px solid yellow; */
+	top:1vh;
+	right:-15vh;
+	 ;
+	/* top:vh; */
+	font-size: 3.8vh;
+	z-index: 2;
+}
+	
+
+#header img{
+	position: relative;
+	top:1.3vh;
+	left:-20vh;
+
+}
+
+
+
+#header .nav-list a{
+	color: white;
+}
+
+
+
+
+#header .nav-list a:hover{
+	padding-top: 0vh;
+	padding-bottom: 0vh;
+
+	color: crimson;
+	font-size: 4.5vh;
+	font-weight: bold;
+	background-color: white;
+	border: 2px solid crimson;
+	border-radius: 4vh;
+
+}
+
+
+#home{
+	background-color: crimson;
+	margin-top:10vh;
+}
+
+
+.Menu h1{
+	font-size: 10vh;
+	padding-bottom: 5vh;
+	color: black;
+	font-style: italic;
+	text-align: center;
+	/* border: 2px solid black; */
+	font-weight: bold;
+}
+
+
+.container .col{
+	/* border: 3px solid black; */
+	padding-bottom: 20vh;
+}
+
+.card{
+	border: 5px solid  black;
+	height:28vh;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+
+.card-img-top{
+	position: relative;
+	width: 25vh;
+	left:5vh;
+	border:5px solid crimson;
+	transform:translateY(-80px);
+	z-index: 100;
+
+}
+
+.card-title{
+	font-size: 3.2vh;
+	font-weight: bold;
+} 
+
+
+.card-text{
+	font-size: 3vh;
+	color: black;
+} 
+
+
+.card-block{
+	/* border: purple 3px solid; */
+
+	transform:translateY(-200px);
+	transition: 0.3s;
+
+	opacity:0;
+}
+
+.card-block .btn{
+	background-color:crimson;
+}
+
+
+.card-block .btn:hover{
+	background-color: white;
+	font-size: 2.5vh;
+	font-weight: bold;
+	color: crimson;
+	border:2px solid crimson;
+}
+	
+
+.card:hover > .card-block{
+	/* border: 5px solid orange; */
+	/* border-right: 3px black solid;
+	border-bottom: 3px black solid;
+	border-left: 3px black solid; */
+	height:25vh;
+	transform:translateY(-95px);
+	background-color: white;
+	transition: 0.3s;
+
+	opacity: 1;
+}
+
+
+
+.foot{
+	background-color: crimson;
+}
+
+
+.foot .logo img{
+	/* border: 2px solid black; */
+	margin-top: 5vh;
+}
+
+.foot h4{
+	color: white;
+	font-size:5vh;
+	text-align: center;
+}
+
+
+.foot .submit button{
+	border: solid white 4px;
+    background-color:crimson;
+	border-radius: 5em;
+	color: white;
+	font-size: 3.5vh;
+}
+
+
+.foot .submit button:hover{
+	border-radius: 5em;
+	background-color: white;
+	color: crimson;
+	font-size: 3.5vh;
+}
+
+
+.foot .icon-link img{
+	filter: grayscale(1);
+	transition: .3s ease filter;
+}
+
+.foot .icon-link img:hover{
+	filter: grayscale(0);
+}
+
+
+
+.foot .footer-link-item{
+	color:white;
+	font-size: 2.5vh;
+}
+
+
+.foot .footer-link-item:hover{
+	color:crimson;
+    background-color: white;
+    font-weight: bold;
+	font-size: 2.5vh;
+}
+
+
+.foot .container-fluid{
+	background-color:black;
+	padding-bottom: 4vh;
+}
+
+.foot .container-fluid .h3{
+    font-size: 4vh;
+	color:white;
+}
+
+
+.foot .container-fluid small{
+    font-size:2vh;
+	color:white;
+}
+
+
+
+.gotopbtn {
+    position: fixed;
+    width: 7.5vh;
+    height: 8vh;
+    padding: 0.8vh; 
+    border: yellow 4px solid;
+    background: #27ae60;
+    bottom: 6vh; 
+    right: 7vh;
+  
+    /* line-height: 50px; */
+}
+
+
+.top img{
+    color: white;
+    text-decoration: none;
+    height: 5vh;
+    
+  }
+
+
+
+
+/* ----------------------------------------------- 
+
+  ------------------Mobile Phone--------------------
+
+ ------------------------------------------------ */
+	
+	 
+@media screen and (max-width:768px){
+	
+
+	#header{
+		position:absolute;
+		background-color: black;
+		/* border: 6px solid yellow; */
+		width:100%;
+		height:25%;
+		top:7.57vh;
+		/* z-index: 1000; */
+		
+	}
+	
+	
+	#header .nav-list {
+	
+		position: absolute;
+		font-weight: bolder;
+		/* border: 2px solid yellow; */
+		top:4vh;
+		left: 0;
+		width:100%;
+		/* top:vh; */
+		font-size: 3.4vh;
+		/* z-index: 2; */
+	}
+		
+	
+	#header img{
+		position:relative;
+		top:-5vh;
+		left:15vh;
+	
+	}
+	
+	
+	#header .nav-list a{
+		color: white;
+	}
+	
+	
+	
+	
+	#header .nav-list a:hover{
+		padding-top: 0vh;
+		padding-bottom: 0vh;
+	
+		color: crimson;
+		font-size: 3.7vh;
+		font-weight: bold;
+		background-color: white;
+		border: 2px solid crimson;
+		border-radius: 4vh;
+	
+	}
+	
+	
+	
+	
+	#home{
+		background-color: crimson;
+		margin-top:40vh;
+	}
+	
+	
+	
+	}
+	
+	
+	
+	
+	/* ----------------------------------------------- 
+	
+	  ------------------Laptop--------------------
+	
+	 ------------------------------------------------ */
+		
+	@media screen and (min-width:1200px) {
+		
+	
+	
+#header{
+	/* position: realtive; */
+	background-color: black;
+	/* border: 6px solid yellow; */
+	/* width:100%; */
+	/* height: 100%; */
+	/* top:7.59vh; */
+	/* z-index: 1000; */
+	
+}
+
+
+#header .nav-list {
+
+	position: absolute;
+	font-weight: bolder;
+	/* border: 2px solid yellow; */
+	top:1vh;
+	right:-15vh;
+	 ;
+	/* top:vh; */
+	font-size: 3.8vh;
+	z-index: 2;
+}
+	
+
+#header img{
+	position: relative;
+	top:1.3vh;
+	left:-20vh;
+
+}
+
+
+
+#header .nav-list a{
+	color: white;
+}
+
+
+
+
+#header .nav-list a:hover{
+	padding-top: 0vh;
+	padding-bottom: 0vh;
+
+	color: crimson;
+	font-size: 4.5vh;
+	font-weight: bold;
+	background-color: white;
+	border: 2px solid crimson;
+	border-radius: 4vh;
+
+}
+
+
+	
+	
+	
+	#home{
+		background-color: crimson;
+		margin-top:20vh;
+	}
+	
+		
+	  }
